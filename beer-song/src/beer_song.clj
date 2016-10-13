@@ -1,8 +1,5 @@
 (ns beer-song)
 
-(defn verse [number]
-  (sing number number))
-
 (defn sing
   ([max] (sing max 0))
   ([max min]
@@ -19,3 +16,6 @@ Take one down and pass it around, 1 bottle of beer on the wall.\n"
                (str "\n" i " bottles of beer on the wall, " i " bottles of beer.\n"
                     "Take one down and pass it around, " (dec i) " bottles of beer on the wall.\n"))))
     "\n" "")))
+
+(defn verse [number]
+  (sing number number))

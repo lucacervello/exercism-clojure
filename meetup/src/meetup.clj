@@ -1,7 +1,7 @@
-(ns meetup)
-(require '[clj-time.core :as time])
-(require '[clj-time.periodic :as time-period])
-(require '[clj-time.predicates :as pr])
+(ns meetup
+  (:require [clj-time.core :as time]
+            [clj-time.periodic :as time-period]
+            [clj-time.predicates :as pr]))
 
 (defn time-range
   "Return a lazy sequence of DateTime's from start to end, incremented
