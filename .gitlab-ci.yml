@@ -1,0 +1,5 @@
+image:clojure:alpine
+
+test:
+  script:
+    - for d in ./*/ ; do (cd "$d" && lein test); done
