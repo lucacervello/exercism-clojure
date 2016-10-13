@@ -1,4 +1,4 @@
-image:clojure:alpine
+image: clojure:alpine
 
 test:
   script:
