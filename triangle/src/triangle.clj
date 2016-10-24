@@ -1,7 +1,5 @@
 (ns triangle)
 
-(helper = [2 2 2])
-
 (defn- illogical? [[x y z]]
   (or (>= z (+ x y))
       (>= x (+ z y))
@@ -15,7 +13,7 @@
 (defn- scalene? [[x y z]]
   (or (not= x y)
       (not= y z)
-      (not= x z)))
+      (not= x z)))i
 
 (defn- equilateral? [[x y z]]
   (= x y z))
