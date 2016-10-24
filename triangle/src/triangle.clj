@@ -13,7 +13,7 @@
 (defn- scalene? [[x y z]]
   (or (not= x y)
       (not= y z)
-      (not= x z)))i
+      (not= x z)))
 
 (defn- equilateral? [[x y z]]
   (= x y z))
