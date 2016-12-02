@@ -4,7 +4,7 @@
   (let [chars (map char (range (int \A) (int \Z)))
         first-letter (rand-nth chars)
         second-letter (rand-nth chars)
-        numbers-name (repeat 3 (rand-int 10))
+        numbers-name (repeatedly 3 #(rand-int 10))
         name (into [first-letter second-letter] numbers-name)]
     (clojure.string/join name)))
 
